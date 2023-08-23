@@ -166,7 +166,6 @@ ul {
   margin-left: 10px;
 }
 
-
 .bottom-side div.account {
   padding-top: 10px;
 }
@@ -192,7 +191,6 @@ ul {
   fill: white;
 }
 
-
 .top-side .playlist .new-playlist:hover i {
   background-color: white;
 }
@@ -202,10 +200,7 @@ ul {
 .top-side .playlist .new-playlist:hover span,
 .playlist .list-play a:hover {
   color: white;
-
 }
-
-
 /* fine SIDEBAR */
 
 /* CONTENT */

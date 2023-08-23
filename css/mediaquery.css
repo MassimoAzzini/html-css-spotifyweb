@@ -43,12 +43,12 @@
     margin-bottom: 10px;
   }
 
-  .bottom-side div.app span,
+  .bottom-side a.app span,
   .bottom-side div.account h3 {
     display: none;
   }
 
-  .bottom-side div.app {
+  .bottom-side a.app {
     border: none;
   }
 

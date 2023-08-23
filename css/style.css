@@ -106,12 +106,15 @@ ul {
   font-size: 0.8rem;
 }
 
+.top-side .playlist .new-playlist {
+  cursor: pointer;
+}
+
 .top-side .playlist span {
   color: #717171;
 }
 
 .top-side .playlist i {
-  cursor: pointer;
   color: black;
   font-size: 1.2rem;
   padding: 8px;
@@ -138,22 +141,27 @@ ul {
   height: 70px;
 }
 
-.bottom-side img {
-  width: 20px;
-}
-
 .bottom-side .app,
 .bottom-side .account {
   align-items: center;
 }
 
-.bottom-side div.app {
+.bottom-side img,
+.bottom-side svg {
+  width: 20px;
+}
+
+.bottom-side svg *{
+  fill: #717171;
+}
+
+.bottom-side a.app {
   font-size: 0.8rem;
   padding-bottom: 10px;
   border-bottom: 1px solid #a3a3a3;
 }
 
-.bottom-side div.app span {
+.bottom-side a.app span {
   color: #717171;
   margin-left: 10px;
 }
@@ -178,6 +186,25 @@ ul {
 .bottom-side div.account img {
   width: 25px;
 }
+
+.bottom-side a:hover svg *,
+.top-side .menu li a:hover svg *{
+  fill: white;
+}
+
+
+.top-side .playlist .new-playlist:hover i {
+  background-color: white;
+}
+
+.bottom-side a:hover span,
+.top-side .menu li a:hover span,
+.top-side .playlist .new-playlist:hover span,
+.playlist .list-play a:hover {
+  color: white;
+
+}
+
 
 /* fine SIDEBAR */
 

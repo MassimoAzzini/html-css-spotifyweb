@@ -28,6 +28,10 @@ section.bottom {
   background-color: rgba(0, 0, 255, 0.4);
 }
 
+h3 {
+  font-size: 0.8rem;
+}
+
 .top .sidebar {
   width: 230px;
   height: 100%;
@@ -54,6 +58,7 @@ section.bottom {
 
 a {
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 ul {
@@ -72,29 +77,39 @@ ul {
 
 .top-side .menu .logo img {
   width: 150px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .top-side .menu a img {
+  /* fill: #717171;
+  color: #717171; */ 
+  /* da sistemare */
   width: 25px;
   vertical-align: middle;
 }
 
 .top-side .menu li a {
-  color: white;
+  color: #717171;
 }
 
 .top-side .playlist {
   height: calc(100% - 170px);
+  font-size: 0.8rem;
 }
 
+.top-side .playlist span {
+  color: #717171;
+}
+
+
 .top-side .playlist i {
+  cursor: pointer;
   color: black;
-  font-size: 1.4rem;
-  padding: 10px;
+  font-size: 1.2rem;
+  padding: 8px;
   background-color: #a3a3a3;
   vertical-align: middle;
-  margin: 10px 0
+  margin: 10px 10px 10px 0;
 }
 
 .playlist .list-play {
@@ -103,7 +118,7 @@ ul {
 }
 
 .playlist .list-play li {
-  line-height: 2rem;
+  line-height: 1.8rem;
 }
 
 .playlist .list-play a {

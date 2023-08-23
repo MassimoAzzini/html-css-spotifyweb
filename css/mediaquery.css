@@ -24,7 +24,34 @@
     display: none;
   }
 
+  .top .sidebar {
+    width: 50px;
+    padding: 5px 10px 0 10px;
+  }
+
+  .top .content,
+  .content .top-bar {
+    width: calc(100% - 50px);
+  }
+
+  .top-side .menu .logo-big {
+    display: none;
+  }
   
+  .top-side .menu .logo-small {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .bottom-side div.app span,
+  .bottom-side div.account h3 {
+    display: none;
+  }
+
+  .bottom-side div.app {
+    border: none;
+  }
+
 
 }
 

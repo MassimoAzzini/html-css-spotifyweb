@@ -68,28 +68,37 @@ ul {
 /* SIDEBAR */
 .sidebar .top-side {
   width: 100%;
-  height: calc(100% - 80px);
+  height: calc(100% - 70px);
 }
 
 .top-side .menu {
   height: 170px;
 }
 
-.top-side .menu .logo img {
+.top-side .menu .logo-big {
   width: 150px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-.top-side .menu a img {
-  /* fill: #717171;
-  color: #717171; */ 
-  /* da sistemare */
-  width: 25px;
-  vertical-align: middle;
+.top-side .menu .logo-small {
+  display: none;
+}
+
+.top-side .menu li {
+  padding: 3px 0;
 }
 
 .top-side .menu li a {
   color: #717171;
+}
+
+.top-side .menu li a svg {
+  width: 25px;
+  vertical-align: middle;
+}
+
+.top-side .menu li a svg *{
+  fill: #717171;
 }
 
 .top-side .playlist {
@@ -100,7 +109,6 @@ ul {
 .top-side .playlist span {
   color: #717171;
 }
-
 
 .top-side .playlist i {
   cursor: pointer;
@@ -127,8 +135,50 @@ ul {
 
 .sidebar .bottom-side {
   width: 100%;
-  height: 80px;
+  height: 70px;
 }
+
+.bottom-side img {
+  width: 20px;
+}
+
+.bottom-side .app,
+.bottom-side .account {
+  align-items: center;
+}
+
+.bottom-side div.app {
+  font-size: 0.8rem;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.bottom-side div.app span {
+  color: #717171;
+  margin-left: 10px;
+}
+
+
+.bottom-side div.account {
+  padding-top: 10px;
+}
+
+.bottom-side div.account h3 {
+  margin-left: 10px;
+}
+
+.bottom-side div.profile {
+  width: 25px;
+  height: 25px;
+  background-color: #717171;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.bottom-side div.account img {
+  width: 25px;
+}
+
 /* fine SIDEBAR */
 
 /* CONTENT */
@@ -162,12 +212,12 @@ ul {
 }
 
 .bottom .col {
-  width: calc(100% - 230px - 230px);
+  width: calc(100% - 180px - 180px);
   height: 100%;
 }
 
 .bottom .col-small {
-  width: 230px;
+  width: 180px;
   height: 100%;
 }
 /* fine BOTTOM */

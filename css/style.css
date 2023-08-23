@@ -35,7 +35,9 @@ section.bottom {
   width: calc(100% - 230px);
   height: 100%;
   padding-top: 90px;
-  background-color: rgba(255, 0, 0, 0.4)
+  background-color: rgba(255, 0, 0, 0.4);
+  overflow: auto;
+  
 }
 
 .content .top-bar {
@@ -47,22 +49,49 @@ section.bottom {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* SIDEBAR */
 .sidebar .top-side {
   width: 100%;
   height: calc(100% - 80px);
   background-color: rgba(138, 43, 226, 0.4);
+}
 
+.top-side .menu {
+  height: 200px;
+}
+
+.top-side .playlist {
+  height: calc(100% - 200px);
 }
 
 .playlist .list-play {
-  height: 100%;
-  overflow: scroll;
+  height: calc(100% - 20px);
+  overflow: auto;
 }
 
 .sidebar .bottom-side {
   width: 100%;
   height: 80px;
 }
+/* fine SIDEBAR */
+
+/* CONTENT */
+.content .row {
+  width: 100%;
+}
+
+.content .col {
+  width: calc(100% / 6);
+  height: 250px;
+  padding: 10px;
+}
+
+.content .card {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+/* fine CONTENT */
 
 
 

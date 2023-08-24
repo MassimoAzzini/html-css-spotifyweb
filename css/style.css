@@ -13,6 +13,10 @@ body {
   display: flex;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .debug {
   border: 1px solid red;
 }
@@ -38,13 +42,13 @@ h3 {
   min-height: 450px;
   height: 100%;
   background-color: #000000;
-  padding: 25px 20px 0 20px;
+  padding: 25px 20px 0 0;
 }
 
 .top .content {
   width: calc(100% - 230px);
   height: 100%;
-  padding-top: 90px;
+  padding: 100px 10px 10px;
   background-color: #141922;
   overflow: auto;
 }
@@ -68,6 +72,15 @@ ul {
 }
 
 /* SIDEBAR */
+
+.top-side .menu .logo-big,
+.top-side .menu .logo-small,
+.top-side .playlist,
+.top-side .menu li a,
+.sidebar .bottom-side {
+  padding-left: 20px;
+}
+
 .sidebar .top-side {
   width: 100%;
   height: calc(100% - 70px);
@@ -101,6 +114,15 @@ ul {
 
 .top-side .menu li a svg *{
   fill: #717171;
+}
+
+.top-side .menu li.active *{
+  color: white;
+  fill: white;
+}
+
+.top-side .menu li.active {
+  border-left: 4px solid #cffb7e;
 }
 
 .top-side .playlist {
@@ -229,6 +251,29 @@ ul {
   transform: scale(1.1);
 }
 
+.content ul {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.content nav ul li a {
+  color: #717171;
+}
+
+
+.content nav ul li .active {
+  align-self: center;
+  margin-top: 5px;
+  width: 30px;
+  height: 2px;
+  background-color: #cffb7e;
+}
+
+.content nav ul li a:hover {
+  color: white;
+}
 
 .content .row {
   width: 100%;
@@ -266,9 +311,10 @@ footer .col {
 }
 
 footer .col.controls {
-  width: 40%;
+  width: 35%;
   justify-content: space-evenly;
   flex-direction: column;
+  align-items: center;
 }
 
 footer .col.controls li{
@@ -300,7 +346,14 @@ footer .col.controls .time-bar {
 
 footer .col.controls .time-bar span {
   font-size: 0.5rem;
-  padding: 0 20px;
+}
+
+footer .col.controls .time-bar span.left {
+  padding-right: 20px;
+}
+
+footer .col.controls .time-bar span.right {
+  padding-left: 20px;
 }
 
 footer .duration {
@@ -334,6 +387,13 @@ footer .duration:hover .listened i {
   display: block;
 }
 
+footer .col.song {
+  width: 20%;
+  max-width: 230px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
 footer .col.song img {
   max-width: 42px;
 }
@@ -341,7 +401,7 @@ footer .col.song img {
 footer .col.song .info {
   flex-direction: column;
   justify-content: center;
-  margin: 0 20px;
+  padding: 0 5px;
 }
 
 footer .col.song .info .album {
@@ -369,17 +429,8 @@ footer .col.song .favorites button:hover {
 }
 
 footer .col.volume {
-  width: 230px;
-  padding-right: 10px;
+  width: 200px;
 }
-
-
-
-
-
-
-
-
 /* fine FOOTER */
 
 

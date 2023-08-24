@@ -31,7 +31,7 @@
             <img class="logo-small" src="img/logo-small.svg" alt="">
           </div>
           <ul>
-            <li>
+            <li class="active">
               <a href="#">
                 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="#ffffff"/></svg>
                 <span>Home</span>
@@ -91,14 +91,32 @@
       <div class="top-bar flex">
         <button class="upgrade flex">EFFETTUA L'UPGRADE</button>
       </div>
-      <nav>
+      <nav class="flex">
         <ul class="flex">
-          <li>IN EVIDENZA</li>
-          <li>PODACAST</li>
-          <li>CLASSIFICHE</li>
-          <li>GENERI E MOOD</li>
-          <li>NUOVE USCITE</li>
-          <li>SCOPRI</li>
+          <li class="flex column">
+            <a href="#">IN EVIDENZA</a>
+            <div class="active"></div>
+          </li>
+          <li class="flex column">
+            <a href="#">PODACAST</a>
+            <div class=""></div>
+          </li>
+          <li class="flex column">
+            <a href="#">CLASSIFICHE</a>
+            <div class=""></div>
+          </li>
+          <li class="flex column">
+            <a href="#">GENERI E MOOD</a>
+            <div class=""></div>
+          </li>
+          <li class="flex column">
+            <a href="#">NUOVE USCITE</a>
+            <div class=""></div>
+          </li>
+          <li class="flex column">
+            <a href="#">SCOPRI</a>
+            <div class=""></div>
+          </li>
         </ul>
       </nav>
       <h1>Recently played</h1>
@@ -172,13 +190,13 @@
           </ul>
         </nav>
         <div class="time-bar flex">
-          <span>0:25</span>
+          <span class="left">0:25</span>
           <div class="duration">
             <div class="listened flex">
               <i class="fa-solid fa-circle"></i>
             </div>
           </div>
-          <span>4:35</span>
+          <span class="right">4:35</span>
         </div>
       </div>
       <div class="col volume flex">

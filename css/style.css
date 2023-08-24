@@ -23,7 +23,7 @@ section.top {
   overflow: hidden;
 }
 
-section.bottom {
+footer {
   width: 100%;
   height: 90px;
   background-color: #282828;
@@ -252,23 +252,91 @@ ul {
 }
 /* fine CONTENT */
 
-/* BOTTOM */
-.bottom .row {
+/* FOOTER */
+footer .row {
   justify-content: space-between;
   width: 100%;
   height: 100%;
 }
 
-.bottom .col {
+footer .col {
   height: 100%;
   justify-content: center;
   align-items: center;
 }
 
-.bottom .col.controls {
+footer .col.controls {
   width: 50%;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
-/* fine BOTTOM */
+footer .col.controls li{
+  margin: 0 20px;
+  align-self: center;
+}
+
+footer .col.controls li button {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+footer .col.controls li button.play {
+  font-size: 2rem;
+}
+
+footer .col.controls li button.play:hover {
+  transform: scale(1.1);
+}
+
+footer .col.controls .time-bar {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+footer .col.controls .time-bar span {
+  font-size: 0.6rem;
+  padding: 0 20px;
+}
+
+footer .col.controls .time-bar .duration {
+  cursor: pointer;
+  width: 80%;
+  height: 4px;
+  background-color: #5a5a5a;
+  border-radius: 2px;
+}
+
+footer .col.controls .time-bar .listened {
+  justify-content: end;
+  align-items: center;
+  width: 30%;
+  height: 4px;
+  background-color: #c1c1c1;
+  border-radius: 2px;
+}
+
+footer .col.controls .time-bar .listened i {
+  display: none;
+  font-size: 0.6rem;
+  color: white;
+}
+
+footer .col.controls .time-bar .duration:hover .listened {
+  background-color: #cffb7e;
+}
+
+footer .col.controls .time-bar .duration:hover .listened i {
+  display: block;
+}
+
+
+
+
+/* fine FOOTER */
 
 

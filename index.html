@@ -148,13 +148,32 @@
     <!-- fine CONTENT -->
   </section>
 
-  <section class="bottom">
+  <footer>
     <div class="row flex">
-      <div class="col flex debug">song</div>
-      <div class="col controls flex debug">controls</div>
-      <div class="col flex debug">volume</div>
+      <div class="col song flex debug">song</div>
+      <div class="col controls flex debug">
+        <nav class="player">
+          <ul class="flex">
+            <li><button><i class="fa-solid fa-shuffle"></i></button></li>
+            <li><button><i class="fa-solid fa-backward-step"></i></button></li>
+            <li><button class="play"><i class="fa-regular fa-circle-play"></i></button></li>
+            <li><button><i class="fa-solid fa-forward-step"></i></button></li>
+            <li><button><i class="fa-solid fa-rotate-right"></i></button></li>
+          </ul>
+        </nav>
+        <div class="time-bar flex">
+          <span>0:25</span>
+          <div class="duration">
+            <div class="listened flex">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+          </div>
+          <span>4:35</span>
+        </div>
+      </div>
+      <div class="col volume flex debug">volume</div>
     </div>
-  </section>
+  </footer>
   
   
 </body>

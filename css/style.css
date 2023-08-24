@@ -266,26 +266,26 @@ footer .col {
 }
 
 footer .col.controls {
-  width: 50%;
+  width: 40%;
   justify-content: space-evenly;
   flex-direction: column;
 }
 
 footer .col.controls li{
-  margin: 0 20px;
+  margin: 0 15px;
   align-self: center;
 }
 
 footer .col.controls li button {
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: white;
   background-color: transparent;
   border: none;
 }
 
 footer .col.controls li button.play {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 footer .col.controls li button.play:hover {
@@ -299,11 +299,11 @@ footer .col.controls .time-bar {
 }
 
 footer .col.controls .time-bar span {
-  font-size: 0.6rem;
+  font-size: 0.5rem;
   padding: 0 20px;
 }
 
-footer .col.controls .time-bar .duration {
+footer .duration {
   cursor: pointer;
   width: 80%;
   height: 4px;
@@ -311,7 +311,7 @@ footer .col.controls .time-bar .duration {
   border-radius: 2px;
 }
 
-footer .col.controls .time-bar .listened {
+footer .listened {
   justify-content: end;
   align-items: center;
   width: 30%;
@@ -320,19 +320,62 @@ footer .col.controls .time-bar .listened {
   border-radius: 2px;
 }
 
-footer .col.controls .time-bar .listened i {
+footer .listened i {
   display: none;
   font-size: 0.6rem;
   color: white;
 }
 
-footer .col.controls .time-bar .duration:hover .listened {
+footer .duration:hover .listened {
   background-color: #cffb7e;
 }
 
-footer .col.controls .time-bar .duration:hover .listened i {
+footer .duration:hover .listened i {
   display: block;
 }
+
+footer .col.song img {
+  max-width: 42px;
+}
+
+footer .col.song .info {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+footer .col.song .info .album {
+  font-size: 0.8rem;
+}
+
+footer .col.song .info .song-name {
+  font-size: 0.6rem;
+  color: #717171;
+}
+
+footer .col.volume button,
+footer .col.song .favorites button {
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 10px;
+  color: #717171;
+  background-color: transparent;
+  border: transparent;
+}
+
+footer .col.volume button:hover,
+footer .col.song .favorites button:hover {
+  color: white;
+}
+
+footer .col.volume {
+  width: 230px;
+  padding-right: 10px;
+}
+
+
+
+
 
 
 

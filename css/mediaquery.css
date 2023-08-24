@@ -52,6 +52,14 @@
     border: none;
   }
 
+  footer .col.song .favorites {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+
+
+
 
 }
 

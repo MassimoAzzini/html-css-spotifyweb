@@ -302,6 +302,7 @@ ul {
 }
 
 .content .card {
+  cursor: pointer;
   align-items: center;
   width: 100%;
 }
@@ -327,7 +328,7 @@ ul {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .content .card .img .overlay i {

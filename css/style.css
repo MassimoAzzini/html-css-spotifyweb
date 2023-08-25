@@ -13,7 +13,7 @@ body {
   display: flex;
 }
 
-.column {
+.f-column {
   flex-direction: column;
 }
 
@@ -72,7 +72,6 @@ ul {
 }
 
 /* SIDEBAR */
-
 .top-side .menu .logo-big,
 .top-side .menu .logo-small,
 .top-side .playlist,
@@ -235,6 +234,7 @@ ul {
 .content .top-bar {
   align-items: center;
   justify-content: end;
+  z-index: 999;
 }
 
 .content .top-bar .upgrade {
@@ -266,7 +266,6 @@ ul {
   color: #717171;
 }
 
-
 .content nav ul li .active {
   align-self: center;
   margin-top: 5px;
@@ -279,26 +278,96 @@ ul {
   color: white;
 }
 
+.content .categorie {
+  padding: 30px 0 20px 10px;
+}
+
+.content .categorie h1 {
+  font-size: 1.5rem;
+}
+
+.content .categorie span {
+  font-size: 0.8rem;
+  padding-top: 20px;
+}
+
 .content .row {
-  width: 100%;
+  overflow: hidden;
 }
 
 .content .col {
   width: calc(100% / 6);
-  height: 250px;
+  min-width: calc(100% / 6);
   padding: 10px;
 }
 
 .content .card {
+  align-items: center;
   width: 100%;
-  height: 100%;
-  background-color: green;
 }
 
-.content h1,
-.content .subtitle {
-  padding: 0 10px;
+.content .card:hover .img .overlay {
+  display: block;
 }
+
+.content .card .img,
+.content .card .img img,
+.content .card .img .overlay,
+.content .description {
+  width: 100%;
+}
+
+.content .card .img {
+  position: relative;
+}
+
+.content .card .img .overlay {
+  display: none;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content .card .img .overlay i {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+
+.content .card .description {
+  align-items: center;
+}
+
+.content .card .description .album {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.content .card .description .autore {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #717171;
+}
+
+.content .card.artisti .img {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.content .card.artisti .description .art {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+
 /* fine CONTENT */
 
 /* FOOTER */

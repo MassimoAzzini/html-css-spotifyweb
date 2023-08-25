@@ -249,22 +249,49 @@ main .content {
   z-index: 999;
 }
 
+/* button upgrade */
 .content .top-bar .upgrade {
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
+  position: relative;  
   width: 220px;
   height: 40px;
-  color: white;
   border: 1px solid white;
   border-radius: 20px;
   margin-right: 20px;
   background-color: transparent;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.content .top-bar .upgrade * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content .top-bar .upgrade span {
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content .top-bar .upgrade div {
+  background-color: rgba(207 , 251, 126, 0.6);
+  transform: translateX(-100%);
+  transition: all 0.2s;
 }
 
 .content .top-bar .upgrade:hover {
   transform: scale(1.1);
 }
+
+.content .top-bar .upgrade:hover div {
+  transform: translateX(0);
+}
+/* end button upgrade */
+
 
 .content ul {
   justify-content: center;
@@ -397,6 +424,11 @@ footer .col.controls li button {
   color: white;
   background-color: transparent;
   border: none;
+  transition: color 0.2s;
+}
+
+footer .col.controls li button:hover {
+  color: greenyellow;
 }
 
 footer .col.controls li button.play {

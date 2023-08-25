@@ -1,31 +1,32 @@
 @media screen and (max-width:1100px) {
   .content .col {
     width: calc(100% / 4);
-    min-width: calc(100% / 4);
   }
-
 }
+
 
 @media screen and (max-width:700px) {
   .content .col {
     width: calc(100% / 2);
-    min-width: calc(100% / 2);
   }
 
   footer .col.song .favorites {
     flex-direction: column;
     justify-content: center;
   }
-
 }
+
 
 @media screen and (max-width:600px) {
   .top-side .menu a span,
-  .top-side .playlist {
+  .top-side .playlist,
+  .top-side .menu .logo-big,
+  .bottom-side a.app span,
+  .bottom-side div.account h3 {
     display: none;
   }
 
-  .top .sidebar {
+  main .sidebar {
     width: 50px;
     padding: 5px 10px 0 0;
   }
@@ -38,13 +39,9 @@
     padding-left: 10px;
   }
 
-  .top .content,
+  main .content,
   .content .top-bar {
     width: calc(100% - 50px);
-  }
-
-  .top-side .menu .logo-big {
-    display: none;
   }
   
   .top-side .menu .logo-small {
@@ -52,14 +49,8 @@
     margin-bottom: 10px;
   }
 
-  .bottom-side a.app span,
-  .bottom-side div.account h3 {
-    display: none;
-  }
-
   .bottom-side a.app {
     border: none;
   }
-
 }
 

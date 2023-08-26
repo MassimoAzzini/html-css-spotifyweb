@@ -257,7 +257,7 @@ main .content {
   height: 40px;
   border: 1px solid white;
   border-radius: 20px;
-  margin-right: 20px;
+  margin-right: 30px;
   background-color: transparent;
   overflow: hidden;
   transition: all 0.2s;
@@ -303,12 +303,19 @@ main .content {
   color: var(--light-grey);
 }
 
-.content nav ul li .active {
-  align-self: center;
-  margin-top: 5px;
-  width: 30px;
+.content nav ul li {
+  position: relative;
+}
+
+.content nav ul li .active::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 50%;
+  width: 40%;
   height: 2px;
   background-color: var(--green);
+  transform: translateX(-50%);
 }
 
 .content nav ul li a:hover {
@@ -321,21 +328,33 @@ main .content {
 
 .content .row {
   overflow: hidden;
+  padding: 10px 0;
 }
 
 .content .col {
   width: calc(100% / 6);
   flex-shrink: 0;
   padding: 10px;
+  justify-content: stretch;
 }
 
 .content .card {
   cursor: pointer;
   align-items: center;
+  background-color: #252d3c;
+  height: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.2s;
 }
 
 .content .card:hover .img .overlay {
   display: block;
+}
+
+.content .col .card:hover {
+  background-color: #343d4f;
+  transform: scale(1.1);
 }
 
 .content ul,
@@ -424,15 +443,14 @@ footer .col.controls li button {
   color: white;
   background-color: transparent;
   border: none;
-  transition: color 0.2s;
-}
-
-footer .col.controls li button:hover {
-  color: greenyellow;
 }
 
 footer .col.controls li button.play {
   font-size: 1.6rem;
+}
+
+footer .col.controls li button:hover {
+  color: greenyellow;
 }
 
 footer .col.controls li button.play:hover {

@@ -58,12 +58,21 @@ ul {
   height: 100%;
 }
 
+.perc-30 {
+  width: 30%;
+}
+
+.perc-50 {
+  width: 50%;
+}
+
 :root {
   --light-grey: #717171;
   --green: #cffb7e;
   --color-hover: #ffffff;
   --color-active: #ffffff;
 }
+
 
 /* ---SIDEBAR--- */
 main .sidebar {
@@ -120,6 +129,7 @@ main .sidebar {
   border-left: 4px solid transparent;
 }
 
+/* active sidebar */
 .top-side .menu li.active *{
   color: var(--color-active);
   fill: var(--color-active);
@@ -128,6 +138,8 @@ main .sidebar {
 .top-side .menu li.active {
   border-color: var(--green);
 }
+/* end active sidebar */
+
 
 .top-side .playlist {
   height: calc(100% - 170px);
@@ -212,6 +224,7 @@ main .sidebar {
   width: 25px;
 }
 
+/* hover sidebar */
 .bottom-side a:hover svg *,
 .top-side .menu li a:hover svg *{
   fill: var(--color-hover);
@@ -227,6 +240,8 @@ main .sidebar {
 .playlist .list-play a:hover {
   color: var(--color-hover);
 }
+/* end hover sidebar */
+
 /* ---end SIDEBAR--- */
 
 /* ---CONTENT--- */
@@ -307,6 +322,8 @@ main .content {
   position: relative;
 }
 
+
+/* active and hover nav content */
 .content nav ul li .active::after {
   content: "";
   position: absolute;
@@ -318,9 +335,15 @@ main .content {
   transform: translateX(-50%);
 }
 
+.content nav ul li .active {
+  color: var(--color-active);
+}
+
 .content nav ul li a:hover {
   color: var(--color-hover);
 }
+/* end active and hover nav content */
+
 
 .content .categories {
   padding: 30px 0 20px 10px;
@@ -410,6 +433,39 @@ main .content {
 /* ---end CONTENT--- */
 
 /* ---FOOTER--- */
+/* played-bar */
+.played-bar {
+  cursor: pointer;
+  width: 80%;
+  height: 4px;
+  background-color: #5a5a5a;
+  border-radius: 2px;
+}
+
+.played-bar-listened {
+  justify-content: end;
+  align-items: center;
+  height: 4px;
+  background-color: #c1c1c1;
+  border-radius: 2px;
+}
+
+.played-bar-listened i {
+  display: none;
+  font-size: 0.6rem;
+  flex-shrink: 0;
+}
+
+.played-bar:hover .played-bar-listened {
+  background-color: var(--green);
+}
+
+.played-bar:hover .played-bar-listened i {
+  display: block;
+}
+/* end played-bar */
+
+
 footer .row {
   justify-content: space-between;
   width: 100%;
@@ -458,51 +514,13 @@ footer .col.controls li button.play:hover {
 }
 
 footer .col.controls .time-bar {
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
 footer .col.controls .time-bar span {
   font-size: 0.5rem;
-}
-
-footer .col.controls .time-bar span.left {
-  padding-right: 20px;
-}
-
-footer .col.controls .time-bar span.right {
-  padding-left: 20px;
-}
-
-footer .duration {
-  cursor: pointer;
-  width: 80%;
-  height: 4px;
-  background-color: #5a5a5a;
-  border-radius: 2px;
-}
-
-footer .listened {
-  justify-content: end;
-  align-items: center;
-  width: 30%;
-  height: 4px;
-  background-color: #c1c1c1;
-  border-radius: 2px;
-}
-
-footer .listened i {
-  display: none;
-  font-size: 0.6rem;
-}
-
-footer .duration:hover .listened {
-  background-color: var(--green);
-}
-
-footer .duration:hover .listened i {
-  display: block;
 }
 /* end foot-centrale */
 
@@ -523,6 +541,11 @@ footer .col.song .info {
   padding: 0 5px;
 }
 
+footer .col.song .info a h3 {
+  color: white;
+}
+
+
 footer .col.song .info .song-name {
   font-size: 0.6rem;
   color: var(--light-grey);
@@ -536,14 +559,22 @@ footer .col.song .favorites button {
   border: transparent;
 }
 
+footer .col.volume {
+  width: 200px;
+}
+
+/* hover song and volume */
+footer .col.song .info a:hover * {
+  text-decoration: underline;
+  color: var(--color-hover);
+}
+
 footer .col.volume button:hover,
 footer .col.song .favorites button:hover {
   color: var(--color-hover);
 }
+/* end hover song and volume */
 
-footer .col.volume {
-  width: 200px;
-}
 /* end foot-both side */
 
 /* fine FOOTER */

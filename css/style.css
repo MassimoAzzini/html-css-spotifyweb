@@ -364,10 +364,8 @@ main .content {
 .content .card {
   cursor: pointer;
   align-items: center;
-  background-color: #252d3c;
   height: 100%;
   padding: 5px;
-  border-radius: 10px;
   transition: all 0.2s;
 }
 
@@ -376,7 +374,6 @@ main .content {
 }
 
 .content .col .card:hover {
-  background-color: #343d4f;
   transform: scale(1.1);
 }
 
@@ -391,6 +388,10 @@ main .content {
 
 .content .card .img {
   position: relative;
+}
+
+.content .card .img img {
+  display: block;
 }
 
 .content .card .img .overlay {

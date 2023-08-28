@@ -116,13 +116,13 @@ main .sidebar {
   color: var(--light-grey);
 }
 
-.top-side .menu li a svg {
+.top-side .menu li a img {
   width: 25px;
   vertical-align: middle;
 }
 
-.top-side .menu li a svg *{
-  fill: var(--light-grey);
+.top-side .menu li a img {
+  opacity: 0.4;
 }
 
 .top-side .menu li {
@@ -132,7 +132,7 @@ main .sidebar {
 /* active sidebar */
 .top-side .menu li.active *{
   color: var(--color-active);
-  fill: var(--color-active);
+  opacity: 1;
 }
 
 .top-side .menu li.active {
@@ -190,8 +190,9 @@ main .sidebar {
   width: 20px;
 }
 
-.bottom-side svg *{
-  fill: var(--light-grey);
+.bottom-side img {
+  opacity: 0.4;
+  color: var(--light-grey);
 }
 
 .bottom-side a.app {
@@ -225,9 +226,9 @@ main .sidebar {
 }
 
 /* hover sidebar */
-.bottom-side a:hover svg *,
-.top-side .menu li a:hover svg *{
-  fill: var(--color-hover);
+.bottom-side a:hover img,
+.top-side .menu li a:hover img {
+  opacity: 1;
 }
 
 .top-side .playlist .new-playlist:hover i {
